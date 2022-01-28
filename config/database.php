@@ -4,10 +4,10 @@ use Illuminate\Support\Str;
 
 $url = parse_url(getenv("DATABASE_URL"));
 
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
+//$host = $url["host"];
+//$username = $url["user"];
+//$password = $url["pass"];
+//$database = substr($url["path"], 1);
 
 return [
 
@@ -22,7 +22,7 @@ return [
     |
      */
 
-    'default' => 'pgsql',
+    'default' => 'mysql',
 
     /*
     |--------------------------------------------------------------------------
@@ -80,10 +80,10 @@ return [
             // 'username' => env('DB_USERNAME', 'forge'),
             //'password' => env('DB_PASSWORD', ''),
             //
-            'host' => $host,
-            'database' => $database,
-            'username' => $username,
-            'password' => $password,
+            //'host' => $host,
+            /// 'database' => $database,
+            // 'username' => $username,
+            // 'password' => $password,
             //
             //'host' => isset($DATABASE_URL['host']) ? $DATABASE_URL['host'] : null,
             // 'port' => isset($DATABASE_URL['port']) ? $DATABASE_URL['port'] : null,

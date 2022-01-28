@@ -12,7 +12,7 @@
                     <div class="col-md-1 col-sm-1 col-lg-1"></div>
                     <div class="col-md-10 col-sm-10">
                         <div class="lead-news">
- <div class="service-img"><a href="#"><img src="" width="800px" alt="Notebook"></a></div>
+ <div class="service-img"><a href="#"><img src="{{$first_section_thumbnails->image}}" width="800px" alt="Notebook"></a></div>
                             <div class="content">
      <h4 class="lead-heading-01"><a href="{{ route('post.single',$first_section_thumbnails->id) }}">
         @if (session()->get('lang') == 'english')
